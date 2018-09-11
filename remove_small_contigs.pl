@@ -4,7 +4,7 @@ use warnings;
 
 # This script will remove contigs less than a desired length from a fasta file
 
-# use: remove_small_contigs.pl <minimum contig length> <fasta file>
+# use: remove_small_contigs.pl <minimum contig length> <fasta file> > out.fasta
 
 my $minlen = shift or die "Error: `minlen` parameter not provided\n";
 {
