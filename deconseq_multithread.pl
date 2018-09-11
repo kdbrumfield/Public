@@ -270,6 +270,7 @@ unless(exists $params{id}) {
 }
 
 ## Run modified BWA-SW for input file on all selected databases
+### KB added -t 4 flag during bwasw to run 4 threads
 my @dbs = split(/\,/,$params{dbs});
 my @dbs_retain;
 @dbs_retain = split(/\,/,$params{dbs_retain}) if(exists $params{dbs_retain});
@@ -308,6 +309,7 @@ if(@dbs_retain) {
         print STDERR "[deconseq] Generated file ".$fasta." with $seqnum1 sequences in $time seconds\n" if(DEBUG);
 
         # Run BWA-SW for input file on all selected databases
+	### KB added -t 4 flag during bwasw to run 4 threads
         foreach my $db (@dbs_retain) {
             my @refdbs = split(/\,/,DBS->{$db}->{db});
             foreach my $refdb (@refdbs) {
