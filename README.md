@@ -5,4 +5,4 @@ Short scripts used for Assembly and Annotation...
 Altered perl script to use 4 threads during bwasw alignment of deconseq: http://deconseq.sourceforge.net/manual.html
 
 >remove_small_contigs.pl
-Use this script to remove contigs less than a desired length. Adapted from https://www.biostars.org/p/79202/
+Use this script to remove contigs less than a desired length. Adapted from biostars blog: https://www.biostars.org/p/79202/
